@@ -1,5 +1,5 @@
 cd
-VER=$(php -v | grep -o '[0-9.]*' | head -n 1)
+VER=$(php -r 'echo phpversion();')
 wget https://www.php.net/distributions/php-$VER.tar.gz
 tar xf php-$VER.tar.gz 
 cd php-$VER/ext/pdo_mysql
