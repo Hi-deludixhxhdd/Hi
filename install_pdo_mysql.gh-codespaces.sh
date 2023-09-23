@@ -9,3 +9,5 @@ make
 make test
 make install
 sed -i 's/;extension=pdo_mysql/extension=pdo_mysql/' /opt/php/$VER/ini/php.ini
+
+php -i | grep drivers
